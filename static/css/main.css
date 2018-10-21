@@ -1,0 +1,67 @@
+html, body{
+    height:100%;
+}
+
+body {
+    background: url("../images/85708057.jpg") no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+#home {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18pt;
+}
+
+#menu .items {
+    margin-right: 40px;
+}
+#menu .item {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18pt;
+}
+
+#footer {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    font-size: 60pt;
+}
+
+.col-2 {
+    width: 50%;
+    margin: 40px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    justify-content: flex-end;
+}
+
+.right{
+    justify-content: flex-start;
+}
