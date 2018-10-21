@@ -1,0 +1,11 @@
+{
+  "name": "chana-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/benmanbs/chana-website",
+  "author": "Benjamin Shai",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
