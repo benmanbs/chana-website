@@ -1,0 +1,277 @@
+html, body{
+    height:100%;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 18pt;
+}
+
+@font-face {
+    font-family: "Rock It";
+    src: url('../fonts/Rockit.ttf') format("truetype");
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body#home{
+    background: url("../images/home/One-on-One.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow:
+            -1px -1px 0 grey,
+            1px -1px 0 grey,
+            -1px 1px 0 grey,
+            1px 1px 0 grey;
+}
+
+body{
+    background: url("../images/WebsiteBackground.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#menu-bar {
+    position: fixed;
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+    background: url("../images/WebsiteBackground.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home #menu-bar {
+    background: none;
+}
+
+#home-link {
+    font-family: "Rock It", sans-serif;
+    margin-left: 40px;
+    font-size: 18pt;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+}
+#menu .items {
+    margin-right: 40px;
+}
+#menu .item {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18pt;
+}
+
+#footer {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display:flex;
+}
+
+.main.home {
+    display: flex;
+    height: 100%;
+    font-size: 60pt;
+    text-shadow:
+            -1px -1px 0 grey,
+            1px -1px 0 grey,
+            -1px 1px 0 grey,
+            1px 1px 0 grey;
+}
+
+.main.services {
+    padding-left: 40px;
+}
+
+.main.faq {
+    padding-left: 80px;
+}
+
+.faq-answer {
+    font-size: 16pt;
+}
+
+.test-quote {
+    width: 50%;
+}
+
+.test-author {
+    display:flex;
+    width: 50%;
+    font-size: 16pt;
+    justify-content: flex-end;
+}
+
+.col-2 {
+    width: 50%;
+    padding: 40px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    justify-content: flex-end;
+}
+
+.right {
+    justify-content: flex-start;
+}
+.spacer {
+    height: 100px;
+}
+
+.image-holder {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+.image-grace {
+    width: 400px;
+    padding-top: 50px;
+}
+.service {
+    display:flex;
+}
+
+.hamburger-icon {
+    display: none;
+    background: url('../images/menu-1-48.png');
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+/* Small screens */
+@media only screen and (max-device-width: 480px), (max-width: 800px) {
+
+    body#home {
+        background-position: center;
+    }
+    .flex, .service {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .service {
+        padding-bottom: 30px;
+    }
+    .service-name {
+        font-weight: bold;
+    }
+    .service-price {
+        font-style: italic;
+    }
+    .main.home {
+        flex-direction: column;
+        height: 90%;
+    }
+    .test-quote, .test-author {
+        width: 100%;
+    }
+    .left {
+        justify-content: center;
+        align-items: center;
+    }
+    .right {
+        justify-content: center;
+        align-items: center;
+    }
+    .col-2 {
+        width: 100%;
+        height:100%;
+        padding: 0px;
+    }
+    #footer {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+    #footer .icon {
+        padding: 0 10px;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    #menu ul {
+        display: block;
+    }
+    span.main-menu-close-icon {
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .hamburger-icon {
+        background-size: cover;
+        width: 66px;
+        height: 66px;
+    }
+    .main.home {
+        font-size: 120pt;
+    }
+
+    #home-link {
+        font-size: 28pt;
+    }
+
+    #footer .icon img{
+        width: 100px;
+    }
+    #footer .icon {
+        padding: 0 30px;
+    }
+
+    body {
+        font-size: 36pt;
+    }
+
+    #menu .item {
+        font-size: 36pt;
+    }
+
+    span.main-menu-close-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .main.faq {
+        font-size: 48pt;
+    }
+
+    .faq-answer {
+        font-size: 36pt;
+    }
+
+    .test-author {
+        font-size: 34pt;
+    }
+
+    .service {
+        padding-bottom: 80px;
+    }
+}
